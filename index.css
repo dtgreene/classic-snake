@@ -36,7 +36,6 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  background: linear-gradient(45deg, #03050c, #121a36);
 }
 
 canvas {
