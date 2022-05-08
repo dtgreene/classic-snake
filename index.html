@@ -6,15 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
     <link href="index.css" rel="stylesheet">
     <title>Classic Snake</title>
   </head>
   <body>
     <div class="container">
+      <div class="title">
+        <span>Snake</span>
+        <img src="snake.svg">
+      </div>
       <div class="game">
         <canvas id="main-canvas"></canvas>
-        <div id="score">Score: 0</div>        
+        <div id="score" style="display: none;">Score: 0</div>
+        <button id="play-btn">Play</button>
       </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mainloop.js/1.0.0/mainloop.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
