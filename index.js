@@ -141,7 +141,7 @@ function randomizeFood() {
   let selection = cells.concat();
 
   // remove cells where segments are located
-  selection.filter((cell) => {
+  selection = selection.filter((cell) => {
     let keep = true;
     for (let i = 0; i < segments.length; i++) {
       if (
