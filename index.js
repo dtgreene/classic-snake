@@ -10,7 +10,6 @@ const cells = [];
 const colRows = canvasWH / cellSize;
 const cellImage = new Image();
 const foodImage = new Image();
-const twoPI = Math.PI * 2;
 
 const Direction = {
   UP: 0,
@@ -129,6 +128,10 @@ function loadImages(images) {
       image.onload = loadHandler;
     });
   });
+}
+
+function remap(n, start1, stop1, start2, stop2) {
+  return ((n - start1) / (stop1 - start1)) * (stop2 - start2) + start2;
 }
 
 function randomizeSnake() {
